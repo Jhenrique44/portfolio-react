@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Button } from "./utils/button";
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,51 +11,61 @@ export const Navigation = () => {
     }
     setIsOpen(false);
   };
-  const menuItems = [{ label: "Home", section: "home" }];
+  const menuItems = [{ label: "Home", section: "home" }, 
+   { label: "About", section: "about" },
+   { label: "Experience", section: "experience" },
+   { label: "Projects", section: "projects" },
+   { label: "Skills", section: "skills" },
+   { label: "Contact", section: "contact" }
+  ];
 
   return (
-    <nav className="">
-      <div className="container">
-        <div className="">
+    <nav className="fixed top-0 top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
+      <div className="container mx-auto px-6 py-2">
+        <div className="flex items-center justify-between">
           {/* { logo} */}
-          <h1> João Henrique de Freitas Queiroz</h1>
-        </div>
+         <div className="text-x1 font-bold text-brown-700">
+         <h1> João Henrique de Freitas Queiroz</h1>
+         </div>
         {/* {Desktop Menu} */}
-        <div className="">
+        <div className="hidden md:flex item-center space-x-4">
           {menuItems.map((item) => (
             <button
               key={item.section}
               onClick={() => scrollToSection(item.section)}
-              className="button menu-itens"
+              className="text-earth-700 hover:text-mustard-600 transition-colors duration-200 font-medium text-sm px-2 py-1"
             >
               {item.label}
             </button>
           ))}
         </div>
         {/* {Mobile Menu} */}
-        <button
-          // size="icon"
-          className="md:hidden "
+        <Button
+          variant="ghost"
+          size="icon"
+          className="md:hidden h-8 w-8"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        </Button>
       </div>
 
       {/* Mobile Menu */}
-
-      <div className="">
-        <div className="">
-          {menuItems.map((item) => (
-            <button
-              key={item.section}
-              onClick={() => scrollToSection(item.section)}
-              className=""
-            >
-              {item.label}
-            </button>
-          ))}
+      {isOpen && (
+        <div className="md:hidden mt-2 py-3 border-t border-earth-200">
+        <div className="flex flex-col space-y-2">
+            {menuItems.map((item) => (
+              <button
+                key={item.section}
+                onClick={() => scrollToSection(item.section)}
+                className="text-left text-earth-700 hover:text-mustard-600 transition-colors duration-200 font-medium py-1 text-sm"
+              >
+                {item.label}
+              </button>
+            ))}
         </div>
+      </div>
+      )}
       </div>
     </nav>
   );

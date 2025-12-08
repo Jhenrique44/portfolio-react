@@ -27,7 +27,7 @@ export const ExperienceSection = () => {
     window.open('')
   }
   return (
-    <section>
+    <section id="experience">
       <div className="">
         <h2>Some of my experiences</h2>
         <div className="">
