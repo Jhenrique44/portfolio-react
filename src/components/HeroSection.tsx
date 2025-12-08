@@ -64,9 +64,9 @@ export const HeroSection = () => {
       const parts = line.split("~");
       return (
         <>
-          <span className="">user@joaohenrique:</span>
-          <span>~</span>
-          <span>{parts[1]}</span>
+          <span className="text-green-400">user@joaohenrique:</span>
+          <span className="text-blue-400">~</span>
+          <span className="text-white">{parts[1]}</span>
         </>
       );
     }
@@ -147,7 +147,11 @@ export const HeroSection = () => {
               style={{ animationDelay: "0.8s" }}
             >
               <div className="w-[300px] sm:w-[360px] md:w-[420px] lg:w-[500px] xl:w-[580px]">
-                <img src="" alt="João Henrique" className="w-full h-auto object-contain" />
+                <img
+                  src=""
+                  alt="João Henrique"
+                  className="w-full h-auto object-contain"
+                />
               </div>
             </div>
           </div>
