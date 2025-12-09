@@ -1,8 +1,8 @@
+
 import type { Config } from "tailwindcss";
-import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
-  darkMode: ["class", "html"],
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -21,7 +21,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        luckiest: ['"Luckiest Guy"', "cursive"], // ✅ Fonte adicionada
+        luckiest: ['"Luckiest Guy"', "cursive"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -232,5 +232,5 @@ export default {
       },
     },
   },
-  plugins: [(tailwindcssAnimate)],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;

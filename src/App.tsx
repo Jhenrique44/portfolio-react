@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./App.css";
-import Index from "./pages";
+import Index from "./pages/index";
 
 import { TooltipProvider } from "./components/utils/tooltip";
 import { Toaster } from "./components/utils/toaster";
