@@ -33,8 +33,8 @@ export const ProjectsSection = () => {
   };
   return (
     <section id="projects" className="py-20 px-6 bg-bege">
-      <div className="container mx-auto max-w-6x1">
-        <h2 className="text-4x1 lg:text-5x1 font-luckiest text-center mb-16 animate-slide-up">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-4xl lg:text-5xl font-luckiest text-center mb-16 animate-slide-up">
           Latest Projects
         </h2>
 
@@ -54,7 +54,7 @@ export const ProjectsSection = () => {
                     className="w-full h-full object-cover transition-transform duration-300 hover:sacle-110"
                   />
                 </div>
-                <h3 className="text-2x1 font-bold text-white mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4">
                   {" "}
                   {project.title}{" "}
                 </h3>

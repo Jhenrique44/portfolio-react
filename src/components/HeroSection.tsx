@@ -82,13 +82,13 @@ export const HeroSection = () => {
           <div className="space-y-8 animite-fade-in">
             <div className="text-white">
               <h1
-                className="text-4x1 lg:text-5x1 font-bold mb-4 animate-slide-up whitespace-nowrap"
+                className="text-4xl lg:text-5xl font-bold mb-4 animate-slide-up whitespace-nowrap"
                 style={{ animationDelay: "0.2s" }}
               >
                 Hi! I'm João Henrique!
               </h1>
               <p
-                className="textx1 lg:text-2x1 text-white/90 mb-8 animate-slide-up"
+                className="textxl lg:text-2xl text-white/90 mb-8 animate-slide-up"
                 style={{ animationDelay: "0.2s" }}
               >
                 Computer Engineer, Developer and Software Architect
@@ -96,7 +96,7 @@ export const HeroSection = () => {
             </div>
 
             <div
-              className="terminal max-2x1 animate-slide-up"
+              className="terminal max-2xl animate-slide-up"
               style={{ animationDelay: "0.4s" }}
             >
               <div className="terminal-header">

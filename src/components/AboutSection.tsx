@@ -4,7 +4,7 @@ const AboutSection = () => {
       <div className="container mx-auto max-w-10xl">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6 animate-slide-up">
-            <h2 className="text-4x1 lg:text-5x1 font-luckiest text-brown-800 mb-8">
+            <h2 className="text-4xl lg:text-5xl font-luckiest text-brown-800 mb-8">
               About Me
             </h2>
             <div className="prose prose-lg text-brown-700 space-y-4">
@@ -45,7 +45,7 @@ const AboutSection = () => {
             className="flex flex-col gap-5 animte-slide-up"
             style={{ animationDelay: "0.3s" }}
           >
-            <div className="group realtive overflow-hidden rounde-2x1 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-x1">
+            <div className="group realtive overflow-hidden rounde-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <img
                 src=""
                 alt=""
@@ -53,7 +53,7 @@ const AboutSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brown-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div className="group relative overflow-hidden rounded-2x1 shadouw-lg transform transition-all duration-300 hover:scale-105 hover:shadow-x1">
+            <div className="group relative overflow-hidden rounded-2xl shadouw-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <img
                 src=""
                 alt=""
@@ -61,7 +61,7 @@ const AboutSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brown-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div className="group realtive overflow-hidden rounde-2x1 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-x1">
+            <div className="group realtive overflow-hidden rounde-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <img
                 src=""
                 alt=""
@@ -69,7 +69,7 @@ const AboutSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brown-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div className="group realtive overflow-hidden rounde-2x1 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-x1">
+            <div className="group realtive overflow-hidden rounde-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <img
                 src=""
                 alt=""

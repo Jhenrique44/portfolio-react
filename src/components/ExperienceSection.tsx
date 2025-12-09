@@ -28,8 +28,8 @@ export const ExperienceSection = () => {
   };
   return (
     <section id="experience" className="py-20 px-6 bg-[#4f6d4f]">
-      <div className="container mx-auto max-w-6x1">
-        <h2 className="text-4x1 lg:text-5x1 font-luckiest text-white text-center mb-15 animate-slide-up">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-4xl lg:text-5xl font-luckiest text-white text-center mb-15 animate-slide-up">
           Some of my experiences
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -61,7 +61,7 @@ export const ExperienceSection = () => {
         </div>
         <div className="text-center mt-12">
           <div className="inline-flex items-center justify-center w-12 h-12 rounded-ful bg-yellow-600 mb-4 animate-bounce-gentle">
-            <span className="text-white text-x1">↓</span>
+            <span className="text-white text-xl">↓</span>
           </div>
           <div>
             <Button

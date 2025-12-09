@@ -15,9 +15,22 @@ export default defineConfig([
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
     ],
+    plugins: { 
+      '@typescript-eslint': tseslint.configs.recommended,
+      'react-hooks': reactHooks.configs.flat.recommended,
+      'react-refresh': reactRefresh.configs.vite
+    },
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
+    },
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+      "react-refresh/only-export-components": [
+        "warn",
+        { allowConstantExport: true },
+      ],
+      "@typescript-eslint/no-unused-vars": "off",
     },
   },
 ])

@@ -15,11 +15,11 @@ export const ContactSection = () => {
 
   return (
     <section id="contact" className="py-20 px-6 gradient-earth-contact">
-      <div className="container mx-auto max-w-6x1">
+      <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-8 animate-slide-up">
             <div>
-              <h2 className="text-3x1 font-bold mb-4">
+              <h2 className="text-3xl font-bold mb-4">
                 Get in touch!
                 <span
                   className="cursor-pointer hover:text-mustard-300 transition-colors underline decoration-2 underline-offset-8 ml-2"
@@ -64,8 +64,8 @@ export const ContactSection = () => {
             </div>
           </div>
           <div className="text-center lg:text-right animate-slide-up " style={{ animationDelay: "0.6s" }}>
-            <div className="text-6x1 lg:text-8x1 font-luckiest text-mustard-300 thank-you-1">Thank</div>
-            <div className="text-6x1 lg:text-8x1 font-luckiest text-mustard-300 thank-you-2 -mt-1">You</div>
+            <div className="text-6xl lg:text-8xl font-luckiest text-mustard-300 thank-you-1">Thank</div>
+            <div className="text-6xl lg:text-8xl font-luckiest text-mustard-300 thank-you-2 -mt-1">You</div>
           </div>
         </div>
         <div className="mt-16 pt-8 border-t border-white/20 text-center text-white/60 animate-fade-in" style={{ animationDelay: "0.8s" }}>

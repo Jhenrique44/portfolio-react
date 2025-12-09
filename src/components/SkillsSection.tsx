@@ -39,15 +39,15 @@ export const SkillsSection = () => {
   ];
   return (
     <section id="skills" className="py-20 bg-moss-800">
-      <div className="container mx-auto max-w-4x1">
-        <h2 className="text-4x1 lg:text-5x1 font-luckiest text-while text-center mb-16 animate-slide-up">
+      <div className="container mx-auto max-w-4xl">
+        <h2 className="text-4xl lg:text-5xl font-luckiest text-while text-center mb-16 animate-slide-up">
           Featured Skills
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="bg-white rounded-x1 shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:scale-0105 animate-slide-up"
+              className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:scale-0105 animate-slide-up"
               style={{ animationDelay: `${categoryIndex * 0.1}s` }}
             >
               <h3 className="text-xl font-bold text-earth-800 mb-6 border-b border-earth-200 pb-2">
@@ -65,7 +65,7 @@ export const SkillsSection = () => {
                     }}
                   >
                     <span
-                      className="text-2x1 animate-bounce-gentle"
+                      className="text-2xl animate-bounce-gentle"
                       style={{ animationDelay: `${skillIndex * 0.02}s` }}
                     >
                       {skill.icon}

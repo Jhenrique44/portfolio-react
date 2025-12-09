@@ -24,7 +24,7 @@ export const Navigation = () => {
       <div className="container mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
           {/* { logo} */}
-         <div className="text-x1 font-bold text-brown-700">
+         <div className="text-xl font-bold text-brown-700">
          <h1> João Henrique de Freitas Queiroz</h1>
          </div>
         {/* {Desktop Menu} */}
