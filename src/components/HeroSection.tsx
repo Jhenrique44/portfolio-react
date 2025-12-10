@@ -75,7 +75,7 @@ export const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-6 pt-20 pb-0 gradient-crimson overflow-hidden"
+      className="min-h-screen flex items-center justify-center px-6 pt-20 pb-0 gradient-crimson-dark overflow-hidden"
     >
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -148,7 +148,7 @@ export const HeroSection = () => {
             >
               <div className="w-[300px] sm:w-[360px] md:w-[420px] lg:w-[500px] xl:w-[580px] ">
                 <img
-                  src="../../public/images/jh-backgorund-red.png"
+                  src="/images/jh-backgorund-red.png"
                   alt="João Henrique"
                   className="w-full h-auto object-contain rounded-full"
                 />

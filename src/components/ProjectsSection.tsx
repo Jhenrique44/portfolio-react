@@ -18,13 +18,13 @@ export const ProjectsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const projects: Project[] = [
     {
-      title: "Project One",
-      description: "This is the first project.",
-      fullDescription: "This is the full description of the first project.",
-      image: "",
+      title: "Portfolio Angular",
+      description: "This is a portfolio made with Angular.",
+      fullDescription: "This project is a portfolio made with Angular to showcase my skills and learning progress in this framework.",
+      image: "/images/portfolio-angular.png",
       video: "",
-      tags: [],
-      liveUrl: "",
+      tags: ["Angular", "HTML", "Typescript", "CSS"],
+      liveUrl: "https://github.com/Jhenrique44/portfolio-angular",
     },
   ];
   const handleProjectClick = (project: Project) => {
@@ -42,15 +42,15 @@ export const ProjectsSection = () => {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="bg-[#3b1414] backdrop-blur-sm  border-white/20 hover:bg-[#813b28] cursor-pointer"
+              className="bg-[#3b1414] backdrop-blur-sm  border-white/20 hover:shadow-xl transition-transform duration-300 hover:scale-110 cursor-pointer animate-slide-up"
               style={{ animationDelay: `${index * 0.2}s` }}
               onClick={() => handleProjectClick(project)}
             >
               <div className="p-6">
                 <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-crimson-700">
                   <img
-                    src=""
-                    alt=""
+                    src={project.image}
+                    alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-300 hover:sacle-110"
                   />
                 </div>
@@ -67,7 +67,7 @@ export const ProjectsSection = () => {
                     <Badge
                       key={tagIndex}
                       variant="secondary"
-                      className="bg-moss-700 text-moss-100 gover:bg-moss-600"
+                      className="bg-crimson-500 text-moss-100 gover:bg-moss-600"
                     >
                       {tag}
                     </Badge>

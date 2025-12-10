@@ -37,7 +37,7 @@ export const ProjectModal = ({
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto p-6">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-earth-800 mb-4">
+          <DialogTitle className="text-2xl font-bold text-earth-900 mb-4">
             {project.title}
           </DialogTitle>
         </DialogHeader>
@@ -64,17 +64,17 @@ export const ProjectModal = ({
 
           {/* {Description} */}
           <div className="space-y-4">
-            <h3 className="text-base font-semibold text-earth-800">
+            <h3 className="text-base font-semibold text-earth-900">
               About this project
             </h3>
-            <p className="text-sm text-earth-700">{project.fullDescription}</p>
+            <p className="text-md text-earth-900">{project.fullDescription}</p>
           </div>
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag, index) => (
               <Badge
                 key={index}
                 variant="secondary"
-                className="bg-earth-200 text-earth-800 hover:bg-earth-300"
+                className="bg-crimson-500 text-white hover:bg-earth-300"
               >
                 {tag}
               </Badge>
@@ -85,12 +85,12 @@ export const ProjectModal = ({
             {project.liveUrl && (
               <Button
                 onClick={() => handleLinkClick(project.liveUrl)}
-                className="bg-earth-600 hoveR:bg-earth-700 text-white"
+                className="bg-crimson-700 hoveR:bg-[#B55338] text-white"
               >
                 View Website
               </Button>
             )}
-            {project.githubUrl && (
+            {/* {project.githubUrl && (
               <Button
                 variant="outline"
                 onClick={() => handleLinkClick(project.githubUrl)}
@@ -98,8 +98,8 @@ export const ProjectModal = ({
               >
                 View on GitHub
               </Button>
-            )}
-            {project.youtubeUrl && (
+            )} */}
+            {/* {project.youtubeUrl && (
               <Button
                 variant="outline"
                 onClick={() => handleLinkClick(project.youtubeUrl)}
@@ -107,7 +107,7 @@ export const ProjectModal = ({
               >
                 Watch on YouTube
               </Button>
-            )}
+            )} */}
           </div>
         </div>
       </DialogContent>

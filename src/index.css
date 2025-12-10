@@ -130,7 +130,7 @@
 .gradient-crimson-dark {
   background: linear-gradient(-45deg, #1d1d1d, #551b1b, #8b2e2e, #2d2d2d);
   background-size: 400% 400%;
-  animation: gradient-steel 15s ease-in-out infinite;
+  animation: gradient-crimson 15s ease-in-out infinite;
 }
 
 
@@ -269,6 +269,18 @@ html {
     background-position: 0% 50%;
   }
 }
+@keyframes gradient-crimson {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .bg-bege {
   background-color: #eee2d3;

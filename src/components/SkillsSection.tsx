@@ -3,37 +3,36 @@ export const SkillsSection = () => {
     {
       title: "Programming Languages",
       skills: [
-        { name: "Python", icon: "🐍" },
-        { name: "JavaScript", icon: "💛" },
-        { name: "C/C++", icon: "⚡" },
-        { name: "Java", icon: "☕" },
+        { name: "JavaScript", icon: "/icons/javascript.svg" },
+        { name: "Java", icon: "/icons/java.svg" },
+        { name: "SQL", icon: "/icons/sql.svg" },
+        { name: "Python", icon: "/icons/python.svg" },
       ],
     },
     {
       title: "Web Development",
       skills: [
-        { name: "React", icon: "⚛️" },
-        { name: "HTML5", icon: "🧡" },
-        { name: "Wordpress", icon: "🌐" },
-        { name: "Node.js", icon: "💚" },
+        { name: "Vue", icon: "/icons/vue.svg" },
+        { name: "SpringBoot", icon: "/icons/spring.svg" },
+        { name: "AWS", icon: "/icons/aws.svg" },
+        { name: "Node", icon: "/icons/node.svg" },
       ],
     },
     {
       title: "Tools",
       skills: [
-        { name: "Git", icon: "📊" },
-        { name: "GitHub", icon: "🐙" },
-        { name: "VS Code", icon: "💙" },
-        { name: "Figma", icon: "🎨" },
+        { name: "Git", icon: "/icons/git.svg" },
+        { name: "Postman", icon: "/icons/postman.svg" },
+        { name: "Power BI", icon: "/icons/power.svg" },
+        { name: "Figma", icon: "/icons/figma.svg" },
       ],
     },
     {
       title: "Other Technologies",
       skills: [
-        { name: "MySQL", icon: "🐬" },
-        { name: "Linux", icon: "🐧" },
-        { name: "Arduino", icon: "🔧" },
-        { name: "Power BI", icon: "📶" },
+        { name: "HTML5", icon: "/icons/html.svg" },
+        { name: "CSS3", icon: "/icons/css.svg" },
+        { name: "Sass", icon: "/icons/sass.svg" },
       ],
     },
   ];
@@ -57,20 +56,22 @@ export const SkillsSection = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-earth-50 hover:bg-earth-100 transition-all duration-200 hover:scale-105 animate-fade-in"
+                    className="flex items-center animate-bounce-gentle gap-3 p-3 rounded-lg bg-earth-50 hover:bg-earth-100 transition-all duration-200 hover:scale-105 animate-fade-in"
                     style={{
                       animationDelay: `${
                         categoryIndex * 0.1 + skillIndex * 0.05
                       }s`,
                     }}
                   >
-                    <span
+                    {/* <span
                       className="text-2xl animate-bounce-gentle"
                       style={{ animationDelay: `${skillIndex * 0.02}s` }}
                     >
                       {skill.icon}
-                    </span>
-                    <span className="text-earth-700 font-medium">
+                    </span> */}
+                    <img className="text-2xl wd-10 h-10" 
+                    src={ skill.icon} alt={skill.name} style={{animationDelay: `${skillIndex * 0.02}s`}}/>
+                    <span className="text-black font-medium">
                       {skill.name}
                     </span>
                   </div>
