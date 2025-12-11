@@ -46,9 +46,9 @@ const AboutSection = () => {
           >
             <div className="group realtive overflow-hidden rounde-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <img
-                src=""
-                alt=""
-                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                src="/images/huawei-part.jpeg"
+                alt="Huawei partners"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brown-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
@@ -56,11 +56,11 @@ const AboutSection = () => {
               <img
                 src=""
                 alt=""
-                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brown-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div className="group realtive overflow-hidden rounde-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            {/* <div className="group realtive overflow-hidden rounde-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <img
                 src=""
                 alt=""
@@ -75,7 +75,7 @@ const AboutSection = () => {
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brown-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
