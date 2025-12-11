@@ -55,7 +55,7 @@ export const ExperienceSection = () => {
                   <img
                     src={experience.image}
                     alt={experience.title}
-                    className="w-full h-full object-cover transition-transform duration-300"
+                    className="w-full h-full object-scale-down transition-transform duration-300"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-earth-100 mb-2">

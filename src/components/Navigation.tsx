@@ -20,11 +20,11 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
       <div className="container mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
           {/* { logo} */}
-         <div className="text-xl font-bold text-brown-700">
+         <div className="text-xl font-bold text-crimson-700">
          <h1> João Henrique de Freitas Queiroz</h1>
          </div>
         {/* {Desktop Menu} */}
@@ -33,7 +33,7 @@ export const Navigation = () => {
             <button
               key={item.section}
               onClick={() => scrollToSection(item.section)}
-              className="text-earth-700 hover:text-mustard-600 transition-colors duration-200 font-medium text-sm px-2 py-1"
+              className="text-crimson-700 hover:text-mustard-600 transition-colors duration-200 font-medium text-sm px-2 py-1"
             >
               {item.label}
             </button>
