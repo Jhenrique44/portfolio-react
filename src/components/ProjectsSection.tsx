@@ -37,6 +37,16 @@ export const ProjectsSection = () => {
       tags: ["Angular", "Typescript", "Java", "Spring Boot", "Sass"],
       liveUrl: "https://github.com/Jhenrique44/login-page-ng",
     },
+    { 
+      title: "Picpay-backend-challenge",
+      description: "Backend project build in Java and Spring Boot.",
+      fullDescription:
+        "Project build for Picpay's backend-challenge, using Spring Boot. A simple API to simulate a payment system.",
+      image: "/images/Picpay-project.png",
+      video: "",
+      tags: ["Java", "Spring Boot", "PostgreSQL", "Hibernate", "Docker"],
+      liveUrl: "https://github.com/Jhenrique44/PicPay-backend-j",
+    }
   ];
   const handleProjectClick = (project: Project) => {
     setSelectedProject(project);
