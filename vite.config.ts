@@ -10,5 +10,5 @@ export default defineConfig(() => ({
   plugins: [
     react(),
   ],
-  base: "/JoaoHenrique-portfolio/",
+  base: process.env.VITE_BASE_PATH || "/JoaoHenrique-portfolio/",
 }));
